@@ -7,7 +7,7 @@
     <!-- CSS: -->
     <link rel="stylesheet" href="assets/styles.css" />
     <!-- Page Icon: -->
-    <link rel="icon" href="assets/images/logo.svg" />
+    <link rel="icon" href="assets/images/logoIcon.png" />
 
     <!-- FontAwesome CDN: -->
     <link
@@ -40,7 +40,7 @@
     ></script>
 
     <!-- NavBar: -->
-    <nav class="navbar navbar-expand-lg navbar-light bg-light py-3">
+    <nav class="navbar navbar-expand-lg navbar-light bg-light py-3 fixed-top">
       <div class="container">
         <img src="assets/images/logo1.png" alt="" />
         <button
@@ -52,7 +52,7 @@
           aria-expanded="false"
           aria-label="Toggle navigation"
         >
-          <span class="navbar-toggler-icon"></span>
+          <span><i id="bar" class="fas fa-bars"></i></span>
         </button>
         <div class="collapse navbar-collapse" id="navbarSupportedContent">
           <ul class="navbar-nav ml-auto">
@@ -81,5 +81,172 @@
         </div>
       </div>
     </nav>
+
+    <section id="home">
+      <div class="container">
+        <h5>Lançamentos</h5>
+        <h1>Os <b>Melhores Preços</b> do Ano</h1>
+        <p>
+          Lorem ipsum dolor sit amet consectetur <br />
+          adipisicing elit.
+        </p>
+        <button class="text-uppercase">Compre Agora</button>
+      </div>
+    </section>
+
+    <section class="container" id="brands">
+      <div class="row m-0 py-5">
+        <!-- As classes dessas imagens são do próprio bootstrap,
+          deixa as imagens responsivas a partir de 2 colunas pra telas
+          largas, 4 para telas médias, e 6 para telas pequenas: -->
+        <img
+          class="img-fluid col-lg-2 col-md-4 col-6"
+          src="assets/images/brand/1.png"
+          alt=""
+        />
+        <img
+          class="img-fluid col-lg-2 col-md-4 col-6"
+          src="assets/images/brand/2.png"
+          alt=""
+        />
+        <img
+          class="img-fluid col-lg-2 col-md-4 col-6"
+          src="assets/images/brand/3.png"
+          alt=""
+        />
+        <img
+          class="img-fluid col-lg-2 col-md-4 col-6"
+          src="assets/images/brand/4.png"
+          alt=""
+        />
+        <img
+          class="img-fluid col-lg-2 col-md-4 col-6"
+          src="assets/images/brand/5.png"
+          alt=""
+        />
+        <img
+          class="img-fluid col-lg-2 col-md-4 col-6"
+          src="assets/images/brand/6.png"
+          alt=""
+        />
+      </div>
+    </section>
+
+    <section class="w-100" id="categories">
+      <div class="row p-0 m-0">
+        <div class="one p-0 col-lg-4 col-md-12 col-12">
+          <img class="img-fluid" src="assets/images/new/1.jpg" alt="" />
+          <div class="details">
+            <h2>Tênis Esportivos</h2>
+            <button class="text-uppercase">Comprar Agora</button>
+          </div>
+        </div>
+
+        <div class="one p-0 col-lg-4 col-md-12 col-12">
+          <img class="img-fluid" src="assets/images/new/5.jpg" alt="" />
+          <div class="details">
+            <h2>Trajes Sociais</h2>
+            <button class="text-uppercase">Comprar Agora</button>
+          </div>
+        </div>
+
+        <div class="one p-0 col-lg-4 col-md-12 col-12">
+          <img class="img-fluid" src="assets/images/new/3.jpg" alt="" />
+          <div class="details">
+            <h2>Relógios de Pulso</h2>
+            <button class="text-uppercase">Comprar Agora</button>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section class="my-5 pb-5" id="featured">
+      <div class="container text-center mt-5 py-5">
+        <h3>Em Destaque</h3>
+        <!-- Linha pra separar o conteúdo: -->
+        <hr />
+        <p>Aqui você pode ver os novos produtos da Rymo.</p>
+      </div>
+
+      <div class="row mx-auto container-fluid">
+        <div class="product text-center col-lg-3 col-md-4 col-12">
+          <img
+            class="img-fluid mb-3"
+            src="assets/images/featured/1.jpg"
+            alt=""
+          />
+          <div class="stars">
+            <i class="fas fa-star"></i>
+            <i class="fas fa-star"></i>
+            <i class="fas fa-star"></i>
+            <i class="fas fa-star"></i>
+            <i class="fas fa-star"></i>
+          </div>
+          <h5 class="p-name">Tênis Esportivos</h5>
+          <h4 class="p-price">R$98,00</h4>
+          <button class="buy-btn text-uppercase">Compre Agora</button>
+        </div>
+      </div>
+
+      <div class="row mx-auto container-fluid">
+        <div class="product text-center col-lg-3 col-md-4 col-12">
+          <img
+            class="img-fluid mb-3"
+            src="assets/images/featured/2.jpg"
+            alt=""
+          />
+          <div class="stars">
+            <i class="fas fa-star"></i>
+            <i class="fas fa-star"></i>
+            <i class="fas fa-star"></i>
+            <i class="fas fa-star"></i>
+            <i class="fas fa-star"></i>
+          </div>
+          <h5 class="p-name">Tênis Casuais</h5>
+          <h4 class="p-price">R$50,00</h4>
+          <button class="buy-btn text-uppercase">Compre Agora</button>
+        </div>
+      </div>
+
+      <div class="row mx-auto container-fluid">
+        <div class="product text-center col-lg-3 col-md-4 col-12">
+          <img
+            class="img-fluid mb-3"
+            src="assets/images/featured/3.jpg"
+            alt=""
+          />
+          <div class="stars">
+            <i class="fas fa-star"></i>
+            <i class="fas fa-star"></i>
+            <i class="fas fa-star"></i>
+            <i class="fas fa-star"></i>
+            <i class="fas fa-star"></i>
+          </div>
+          <h5 class="p-name">Mochila Casual</h5>
+          <h4 class="p-price">R$79,80</h4>
+          <button class="buy-btn text-uppercase">Compre Agora</button>
+        </div>
+      </div>
+
+      <div class="row mx-auto container-fluid">
+        <div class="product text-center col-lg-3 col-md-4 col-12">
+          <img
+            class="img-fluid mb-3"
+            src="assets/images/featured/4.jpg"
+            alt=""
+          />
+          <div class="stars">
+            <i class="fas fa-star"></i>
+            <i class="fas fa-star"></i>
+            <i class="fas fa-star"></i>
+            <i class="fas fa-star"></i>
+            <i class="fas fa-star"></i>
+          </div>
+          <h5 class="p-name">Gorros de Inverno</h5>
+          <h4 class="p-price">R$20,50</h4>
+          <button class="buy-btn text-uppercase">Compre Agora</button>
+        </div>
+      </div>
+    </section>
   </body>
 </html>
