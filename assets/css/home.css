@@ -148,7 +148,7 @@ button:hover {
   align-items: flex-start;
 }
 
-#home b {
+bMain {
   color: var(--main-color);
 }
 
