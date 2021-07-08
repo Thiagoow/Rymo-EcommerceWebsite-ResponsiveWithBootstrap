@@ -213,3 +213,7 @@ button:hover {
 }
 
 /* Produtos em destaque/featured: */
+.product {
+  cursor: pointer;
+  margin-bottom: 2rem;
+}
