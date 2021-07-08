@@ -296,3 +296,55 @@ hr {
 #parallaxBanner button:hover {
   background-color: var(--main-color-btn-hover);
 }
+
+/* Footer */
+footer {
+  background-color: #222222;
+}
+
+footer h5 {
+  color: var(--main-color);
+  font-weight: 700;
+}
+
+footer h6 {
+  color: white;
+  font-weight: 500;
+}
+
+footer li {
+  padding-bottom: 4px;
+}
+
+footer p {
+  color: rgb(204, 204, 204);
+  font-size: 0.9rem;
+}
+
+footer .copyright a {
+  color: black;
+  width: 38px;
+  height: 38px;
+  background-color: white;
+  display: inline-block;
+  text-align: center;
+  line-height: 38px;
+  border-radius: 50%;
+  transition: 0.3s ease;
+  margin: 0 5px;
+}
+
+/* Estilização dos social Links: */
+footer a {
+  font-size: 1rem;
+  color: rgb(204, 204, 204);
+}
+
+footer a:hover {
+  color: #4400ff;
+}
+
+footer .row a:hover {
+  color: white;
+  background-color: var(--main-color);
+}
