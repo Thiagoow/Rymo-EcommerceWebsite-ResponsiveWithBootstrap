@@ -213,7 +213,44 @@ button:hover {
 }
 
 /* Produtos em destaque/featured: */
+/* Barrinha pra separar o conteúdo: */
+hr {
+  width: 30px;
+  min-height: 4px;
+  background-color: coral;
+}
+
 .product {
   cursor: pointer;
   margin-bottom: 2rem;
+}
+
+.product img {
+  transition: 0.3s all;
+}
+
+.product:hover img {
+  opacity: 0.7;
+}
+
+/* Efeito do botão aparecendo de baixo */
+.product .buy-btn {
+  background: coral;
+  transform: translateY(20px);
+  opacity: 0;
+  transition: 0.3s all;
+}
+.product:hover .buy-btn {
+  transform: translateY(0px);
+  opacity: 1;
+}
+
+/* Espaçamento entre as estrelas */
+.stars {
+  padding: 10px 0;
+}
+
+.stars i {
+  font-size: 00.8rem;
+  color: rgb(255, 192, 31);
 }
