@@ -9,6 +9,11 @@
   --main-color: coral;
 }
 
+/* Tira a outline de qualquer elemento focado: */
+*:focus {
+  outline: none !important;
+}
+
 body {
   font-family: "Poppins", sans-serif;
 }
@@ -152,19 +157,19 @@ hr {
 }
 
 /* Efeito do botão aparecendo de baixo */
-.product .buy-btn {
+.buy-btn {
   background: var(--main-color);
   transform: translateY(20px);
   opacity: 0;
   border-radius: 0.3rem;
   transition: 0.3s all;
 }
-.product:hover .buy-btn {
+.buy-btn {
   transform: translateY(0px);
   opacity: 1;
 }
 
-.product .buy-btn:hover {
+.buy-btn:hover {
   background-color: var(--main-color-btn-hover);
 }
 
@@ -176,6 +181,47 @@ hr {
 .stars i {
   font-size: 00.8rem;
   color: var(--stars-color);
+}
+
+/* Estilização da nav de paginação: */
+#products > nav > ul > li.page-item.active > a {
+  background-color: black;
+  border-color: black;
+  color: white;
+}
+#products > nav > ul > li:nth-child(n):hover > a {
+  background-color: var(--main-color);
+  border-color: black;
+  color: white;
+  font-weight: 600;
+}
+.pagination a {
+  color: black;
+}
+
+/* Tira a estilização dos links dos botão de compra nos produtos: */
+.product a {
+  color: white;
+  text-decoration: none;
+}
+
+.product a:hover {
+  color: white;
+  text-decoration: none;
+}
+
+/* Estilização da caixa de seleção e input de produto: */
+select {
+  display: block;
+  padding: 5px 10px;
+}
+
+.singleProduct input {
+  width: 50px;
+  height: 40px;
+  padding-left: 10px;
+  font-size: 16px;
+  margin-right: 10px;
 }
 
 /* Footer */
@@ -221,38 +267,7 @@ footer a {
   color: rgb(204, 204, 204);
 }
 
-footer a:hover {
-  color: #4400ff;
-  text-decoration: none;
-}
-
 footer .row a:hover {
   color: white;
   background-color: var(--main-color);
-}
-
-/* Espaçamento entre as estrelas */
-.stars {
-  padding: 10px 0;
-}
-
-.stars i {
-  font-size: 00.8rem;
-  color: var(--stars-color);
-}
-
-/* Estilização da nav de paginação: */
-#products > nav > ul > li.page-item.active > a {
-  background-color: black;
-  border-color: black;
-  color: white;
-}
-#products > nav > ul > li:nth-child(n):hover > a {
-  background-color: var(--main-color);
-  border-color: black;
-  color: white;
-  font-weight: 600;
-}
-.pagination a {
-  color: black;
 }

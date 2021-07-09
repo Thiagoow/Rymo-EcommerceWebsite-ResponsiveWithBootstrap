@@ -1,0 +1,48 @@
+.small-img-group {
+  display: flex;
+  justify-content: space-between;
+}
+
+.small-img-col {
+  flex-basis: 24%;
+  cursor: pointer;
+}
+
+.small-img-col:hover img {
+  opacity: 0.7;
+}
+
+/* Estilização dos produtos relacionados: */
+.product {
+  cursor: pointer;
+  margin-bottom: 2rem;
+}
+
+.product img {
+  width: 100%;
+  height: auto;
+  box-sizing: border-box;
+  object-fit: cover;
+  transition: 0.3s all;
+}
+
+.product:hover img {
+  opacity: 0.7;
+}
+
+/* Efeito do botão aparecendo de baixo */
+.product .buy-btn {
+  background: var(--main-color);
+  transform: translateY(20px);
+  opacity: 0;
+  border-radius: 0.3rem;
+  transition: 0.3s all;
+}
+.product:hover .buy-btn {
+  transform: translateY(0px);
+  opacity: 1;
+}
+
+.product .buy-btn:hover {
+  background-color: var(--main-color-btn-hover);
+}
