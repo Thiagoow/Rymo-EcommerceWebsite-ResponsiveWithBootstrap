@@ -143,7 +143,11 @@
         <div class="col-lg-6 col-md-12 col-12">
           <h6 class="pt-2">Loja / T-shirt</h6>
           <h3 class="pt-3 pb-2">Camiseta Masculina Básica</h3>
-          <h2>R$ 38,00</h2>
+          <h2>
+            <script>
+              document.write(price);
+            </script>
+          </h2>
 
           <select class="my-3">
             <option value="">Escolha o tamanho</option>
@@ -157,7 +161,7 @@
             <option value="">G1</option>
             <option value="">G2</option>
           </select>
-          <input type="number" value="1" />
+          <input id="productQuantity" type="number" value="1" min="1" />
           <button class="buy-btn">Adicionar ao Carrinho</button>
 
           <h4 class="mt-5 mb-2">Detalhes do Produto</h4>
