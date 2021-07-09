@@ -230,3 +230,29 @@ footer .row a:hover {
   color: white;
   background-color: var(--main-color);
 }
+
+/* Espaçamento entre as estrelas */
+.stars {
+  padding: 10px 0;
+}
+
+.stars i {
+  font-size: 00.8rem;
+  color: var(--stars-color);
+}
+
+/* Estilização da nav de paginação: */
+#products > nav > ul > li.page-item.active > a {
+  background-color: black;
+  border-color: black;
+  color: white;
+}
+#products > nav > ul > li:nth-child(n):hover > a {
+  background-color: var(--main-color);
+  border-color: black;
+  color: white;
+  font-weight: 600;
+}
+.pagination a {
+  color: black;
+}
