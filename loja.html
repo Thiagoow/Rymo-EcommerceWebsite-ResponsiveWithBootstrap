@@ -64,7 +64,7 @@
               <a class="nav_link" href="/home.html">Home</a>
             </li>
             <li class="nav-item">
-              <a class="nav_link" href="/loja.html">Loja</a>
+              <a class="nav_link active" href="/loja.html">Loja</a>
             </li>
             <li class="nav-item">
               <a class="nav_link" href="#">Site</a>
@@ -88,7 +88,7 @@
 
     <section class="my-5 py-5" id="products">
       <div class="container mt-5 py-5">
-        <h3>Nossos Produtos</h3>
+        <h3 class="font-weight-bold">Nossos Produtos</h3>
         <!-- Linha pra separar o conteúdo: -->
         <hr class="" />
         <p>Aqui você pode ver os todos os novos produtos da Rymo.</p>
@@ -375,6 +375,23 @@
           <button class="buy-btn text-uppercase">Compre Agora</button>
         </div>
       </div>
+
+      <!-- Nav de paginação -->
+      <nav class="row mx-auto mt-5 container" aria-label="...">
+        <ul class="pagination">
+          <li class="page-item disabled">
+            <span class="page-link">Anterior</span>
+          </li>
+          <li class="page-item active"><a class="page-link" href="#">1</a></li>
+          <li class="page-item" aria-current="page">
+            <a class="page-link" href="#">2</a>
+          </li>
+          <li class="page-item"><a class="page-link" href="#">3</a></li>
+          <li class="page-item">
+            <a class="page-link" href="#">Próximo</a>
+          </li>
+        </ul>
+      </nav>
     </section>
 
     <footer class="mt-5 py-5">
