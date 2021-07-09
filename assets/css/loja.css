@@ -5,6 +5,10 @@
 }
 
 .product img {
+  width: 100%;
+  height: auto;
+  box-sizing: border-box;
+  object-fit: cover;
   transition: 0.3s all;
 }
 
