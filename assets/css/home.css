@@ -43,6 +43,10 @@ h6 {
   color: #d8d8d8;
 }
 
+bMain {
+  color: var(--main-color);
+}
+
 button {
   font-size: 0.8rem;
   font-weight: 700;
@@ -130,6 +134,10 @@ button:hover {
   #navbarSupportedContent ul li:nth-child(n) a {
     padding: 10px 0;
   }
+  /* Espaçamento entre os links da navBar mobile (menu hambúrguer): */
+  #navbarSupportedContent ul li:nth-child(n) {
+    padding: 5px;
+  }
 }
 .navbar-light .navbar-toggler {
   border: none;
@@ -147,10 +155,6 @@ button:hover {
   flex-direction: column;
   justify-content: center;
   align-items: flex-start;
-}
-
-bMain {
-  color: var(--main-color);
 }
 
 #categories .one img {
