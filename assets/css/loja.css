@@ -146,12 +146,51 @@ button:hover {
 
 /* Barrinha pra separar o conteúdo: */
 hr {
-  width: 30px;
+  width: 280px;
   min-height: 4px;
   background-color: var(--main-color);
 }
 
 /* Estilização do conteúdo da página loja: */
+.product {
+  cursor: pointer;
+  margin-bottom: 2rem;
+}
+
+.product img {
+  transition: 0.3s all;
+}
+
+.product:hover img {
+  opacity: 0.7;
+}
+
+/* Efeito do botão aparecendo de baixo */
+.product .buy-btn {
+  background: var(--main-color);
+  transform: translateY(20px);
+  opacity: 0;
+  border-radius: 0.3rem;
+  transition: 0.3s all;
+}
+.product:hover .buy-btn {
+  transform: translateY(0px);
+  opacity: 1;
+}
+
+.product .buy-btn:hover {
+  background-color: var(--main-color-btn-hover);
+}
+
+/* Espaçamento entre as estrelas */
+.stars {
+  padding: 10px 0;
+}
+
+.stars i {
+  font-size: 00.8rem;
+  color: var(--stars-color);
+}
 
 /* Footer */
 footer {
