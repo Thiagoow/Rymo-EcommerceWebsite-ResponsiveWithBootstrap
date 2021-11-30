@@ -77,6 +77,10 @@ button:hover {
   box-shadow: 0 5px 10px rgba(0, 0, 0, 0.1);
 }
 
+.navbar .nav-item a {
+  color: black;
+}
+
 .navbar-light .navbar-nav .nav_link {
   padding: 0 20px;
   color: black;
@@ -88,7 +92,8 @@ button:hover {
 .navbar-light .navbar-nav .nav_link:hover,
 .navbar i:hover,
 .navbar-light .navbar-nav .nav_link.active,
-.navbar i.active {
+.navbar i.active,
+.nav-item .active {
   color: var(--main-color);
 }
 

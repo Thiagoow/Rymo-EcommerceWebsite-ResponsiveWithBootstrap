@@ -1,0 +1,25 @@
+#blog-container .post .post-img {
+  overflow: hidden;
+  cursor: pointer;
+}
+
+#blog-container .post img {
+  transition: 0.3s ease;
+}
+
+#blog-container .post:hover img {
+  transform: scale(1.3) rotate(10deg);
+  opacity: 0.8;
+}
+
+#blog-container .post:hover h5 {
+  color: coral;
+}
+#blog-container .post h5 {
+  transition: 0.3s ease;
+  cursor: pointer;
+}
+
+.post-img {
+  border-radius: 2rem;
+}
