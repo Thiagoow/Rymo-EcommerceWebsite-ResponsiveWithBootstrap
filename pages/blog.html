@@ -3,18 +3,18 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Rymo - Sacola</title>
+    <title>Rymo - Blog</title>
     <!--================== FAVICON ===================-->
-    <link rel="icon" href="assets/img/logoIcon.png" />
+    <link rel="icon" href="../assets/img/logoIcon.png" />
     <!--================== CSS ===================-->
-    <link rel="stylesheet" href="assets/css/carrinho.css" />
-    <link rel="stylesheet" href="assets/css/mainLayout.css" />
+    <link rel="stylesheet" href="../assets/css/blog.css" />
+    <link rel="stylesheet" href="../assets/css/mainLayout.css" />
 
     <!--================== LINK THUMBNAIL META TAGS ===================-->
     <!-- MS Tile - for Microsoft apps-->
     <meta
       name="msapplication-TileImage"
-      content="https://raw.githubusercontent.com/Thiagoow/Rymo-EcommerceWebsite-ResponsiveWithBootstrap/master/assets/img/ThumbnailLinkImg.jpg"
+      content="https://raw.githubusercontent.com/Thiagoow/Rymo-EcommerceWebsite-ResponsiveWithBootstrap/master/../assets/img/ThumbnailLinkImg.jpg"
     />
     <!-- fb & Whatsapp -->
     <meta property="og:site_name" content="Rymo." />
@@ -26,7 +26,7 @@
     <!-- IMG URL: -->
     <meta
       property="og:image"
-      content="https://raw.githubusercontent.com/Thiagoow/Rymo-EcommerceWebsite-ResponsiveWithBootstrap/master/assets/img/ThumbnailLinkImg.jpg"
+      content="https://raw.githubusercontent.com/Thiagoow/Rymo-EcommerceWebsite-ResponsiveWithBootstrap/master/../assets/img/ThumbnailLinkImg.jpg"
     />
     <meta property="og:type" content="website" />
     <meta property="og:image:type" content="image/jpeg" />
@@ -69,7 +69,7 @@
     <nav class="navbar navbar-expand-lg navbar-light bg-white py-3 fixed-top">
       <div class="container">
         <a href="/home.html">
-          <img src="assets/img/logo1.png" alt="" />
+          <img src="../assets/img/logo1.png" alt="" />
         </a>
         <button
           class="navbar-toggler"
@@ -85,14 +85,14 @@
         <div class="collapse navbar-collapse" id="navbarSupportedContent">
           <ul class="navbar-nav ml-auto">
             <li class="nav-item">
-              <a class="nav_link" href="/home.html">Home</a>
+              <a class="nav_link" href="../home.html">Home</a>
             </li>
             <li class="nav-item">
-              <a class="nav_link" href="/loja.html">Loja</a>
+              <a class="nav_link" href="/pages/loja.html">Loja</a>
             </li>
 
             <li class="nav-item">
-              <a class="nav_link" href="/blog.html">Blog</a>
+              <a class="nav_link active" href="/pages/blog.html">Blog</a>
             </li>
 
             <li class="nav-item">
@@ -105,9 +105,11 @@
               <i class="fal fa-search"></i>
             </li>
             <li class="nav-item">
-              <a href="/carrinho.html">
-                <i class="fal fa-shopping-bag active"></i>
-              </a>
+              <li class="nav-item">
+                <a href="/pages/carrinho.html">
+                  <i class="fal fa-shopping-bag"></i>
+                </a>
+              </li>
             </li>
           </ul>
         </div>
@@ -115,159 +117,102 @@
     </nav>
 
     <section id="home" class="container pt-5 mt-5">
-      <h3 class="font-weight-bold pt-5">Sua sacola</h3>
+      <h3 class="font-weight-bold pt-5">Últimas postagens</h3>
       <hr />
     </section>
 
-    <section id="cart-container" class="container my-5">
-      <table width="100%">
-        <thead>
-          <tr>
-            <td>Remover</td>
-            <td>Imagem</td>
-            <td>Produto</td>
-            <td>Preço</td>
-            <td>Quantidade</td>
-            <td>Total</td>
-          </tr>
-        </thead>
-
-        <tbody>
-          <!-- Linha 1 -->
-          <tr>
-            <td>
-              <a href="">
-                <i class="fas fa-trash-alt"></i>
-              </a>
-            </td>
-
-            <td>
-              <img src="assets/img/shoes/5.jpg" alt="" />
-            </td>
-
-            <td>
-              <h6>Bege Casual</h6>
-            </td>
-
-            <td>
-              <h6>
-                <b>R$124,50</b>
-              </h6>
-            </td>
-
-            <td>
-              <input class="w-25 pl-1" value="1" min="1" type="number" />
-            </td>
-
-            <td>
-              <h6>
-                <b>R$135,00</b>
-              </h6>
-            </td>
-          </tr>
-
-          <!-- Linha 2 -->
-          <tr>
-            <td>
-              <a href="">
-                <i class="fas fa-trash-alt"></i>
-              </a>
-            </td>
-
-            <td>
-              <img src="assets/img/shop/1.jpg" alt="" />
-            </td>
-
-            <td>
-              <h6>Camiseta Masculina Básica</h6>
-            </td>
-
-            <td>
-              <h6>
-                <b>R$38,00</b>
-              </h6>
-            </td>
-
-            <td>
-              <input class="w-25 pl-1" value="1" min="1" type="number" />
-            </td>
-
-            <td>
-              <h6>
-                <b>R$135,00</b>
-              </h6>
-            </td>
-          </tr>
-
-          <!-- Linha 3 -->
-          <tr>
-            <td>
-              <a href="">
-                <i class="fas fa-trash-alt"></i>
-              </a>
-            </td>
-
-            <td>
-              <img src="assets/img/watches/2.jpg" alt="" />
-            </td>
-
-            <td>
-              <h6>Preto Casual Couro</h6>
-            </td>
-
-            <td>
-              <h6>
-                <b>R$50,00</b>
-              </h6>
-            </td>
-
-            <td>
-              <input class="w-25 pl-1" value="1" min="1" type="number" />
-            </td>
-
-            <td>
-              <h6>
-                <b>R$135,00</b>
-              </h6>
-            </td>
-          </tr>
-        </tbody>
-      </table>
-    </section>
-
-    <section id="cart-bottom" class="container">
+    <section id="blog-container" class="container pt-5">
       <div class="row">
-        <div class="coupon col-lg-6 col-md-6 col-12 mb-4">
-          <div>
-            <h5>CUPOM</h5>
-            <p>Digite aqui seu cupom de desconto caso tenha um:</p>
-            <input type="text" placeholder="Código do cupom" />
-            <button>APLICAR CUPOM</button>
+        <!-- Post1 -->
+        <div class="post col-lg-6 col-md-6 col-12 pb-5">
+          <div class="post-img">
+            <img class="img-fluid w-100" src="../assets/img/blog/1.jpg" alt="" />
+          </div>
+
+          <h5 class="text-center font-weight-normal pt-3">
+            Top 10 fundos profissionais de fotos para o Instagram
+          </h5>
+          <p class="text-center">11 de Jan de 2021</p>
+        </div>
+
+        <!-- Post2 -->
+        <div class="post col-lg-6 col-md-6 col-12 pb-5">
+          <div class="post-img">
+            <img class="img-fluid w-100" src="../assets/img/blog/2.jpg" alt="" />
+          </div>
+
+          <h5 class="text-center font-weight-normal pt-3">
+            Por que os casacos de couro nunca saem de moda
+          </h5>
+          <p class="text-center">09 de Jan de 2021</p>
+        </div>
+
+        <!-- Post3 -->
+        <div class="post col-lg-6 col-md-6 col-12 pb-5">
+          <div class="post-img">
+            <img class="img-fluid w-100" src="../assets/img/blog/3.jpg" alt="" />
+          </div>
+
+          <h5 class="text-center font-weight-normal pt-3">
+            Como inovar seu look casual e ganhar mais likes
+          </h5>
+          <p class="text-center">02 de Dez de 2020</p>
+        </div>
+
+        <!-- Post4 -->
+        <div class="post col-lg-6 col-md-6 col-12 pb-5">
+          <div class="post-img">
+            <img class="img-fluid w-100" src="../assets/img/blog/4.jpg" alt="" />
+          </div>
+
+          <h5 class="text-center font-weight-normal pt-3">
+            Diferentes tipos de maquiagem para cada tom de pele
+          </h5>
+          <p class="text-center">20 de Set de 2020</p>
+        </div>
+
+        <!-- Banner -->
+        <div class="col-lg-12 col-md-12 col-12 pb-5">
+          <div class="post-img">
+            <img
+              class="img-fluid w-100"
+              src="../assets/img/blog/banner.webp"
+              alt=""
+            />
           </div>
         </div>
 
-        <div class="total col-lg-6 col-md-6 col-12">
-          <div>
-            <h5>TOTAL DA COMPRA</h5>
-            <div class="d-flex justify-content-between">
-              <h6>Subtotal</h6>
-              <p>R$212,50</p>
-            </div>
-            <div class="d-flex justify-content-between">
-              <h6>Frete</h6>
-              <p>R$10,50</p>
-            </div>
-
-            <hr class="second-hr" />
-            <div class="d-flex justify-content-between">
-              <h6>TOTAL</h6>
-              <p>
-                <b>R$ 223</b>
-              </p>
-            </div>
-
-            <button class="ml-auto">COMPRAR AGORA</button>
+        <!-- Post5 -->
+        <div class="post col-lg-4 col-md-6 col-12 pb-5">
+          <div class="post-img">
+            <img class="img-fluid w-100" src="../assets/img/blog/1.webp" alt="" />
           </div>
+
+          <h5 class="font-weight-normal pt-3">
+            Os melhores jeitos de mudar seu guarda roupa de verão para o outono
+          </h5>
+        </div>
+
+        <!-- Post6 -->
+        <div class="post col-lg-4 col-md-6 col-12 pb-5">
+          <div class="post-img">
+            <img class="img-fluid w-100" src="../assets/img/blog/3.webp" alt="" />
+          </div>
+
+          <h5 class="font-weight-normal pt-3">
+            A importância de sempre pensar nas cores de suas roupas
+          </h5>
+        </div>
+
+        <!-- Post7 -->
+        <div class="post col-lg-4 col-md-6 col-12 pb-5">
+          <div class="post-img">
+            <img class="img-fluid w-100" src="../assets/img/blog/2.webp" alt="" />
+          </div>
+
+          <h5 class="font-weight-normal pt-3">
+            As maquiagens mais bonitas para se usar na balada
+          </h5>
         </div>
       </div>
     </section>
@@ -275,7 +220,7 @@
     <footer class="mt-5 py-5">
       <div class="row container mx-auto pt-5">
         <div class="footer-one col-lg-3 col-md-6 col-12">
-          <img src="assets/img/logo2.png" alt="" />
+          <img src="../assets/img/logo2.png" alt="" />
           <p class="pt-3">
             A <bMain>Rymo.</bMain> é uma loja on-line de roupas fictícia. Criada
             por
@@ -332,27 +277,27 @@
           <div class="row">
             <img
               class="img-fluid w-25 h-100 m-2"
-              src="assets/img/insta/1.jpg"
+              src="../assets/img/insta/1.jpg"
               alt=""
             />
             <img
               class="img-fluid w-25 h-100 m-2"
-              src="assets/img/insta/2.jpg"
+              src="../assets/img/insta/2.jpg"
               alt=""
             />
             <img
               class="img-fluid w-25 h-100 m-2"
-              src="assets/img/insta/3.jpg"
+              src="../assets/img/insta/3.jpg"
               alt=""
             />
             <img
               class="img-fluid w-25 h-100 m-2"
-              src="assets/img/insta/4.jpg"
+              src="../assets/img/insta/4.jpg"
               alt=""
             />
             <img
               class="img-fluid w-25 h-100 m-2"
-              src="assets/img/insta/5.jpg"
+              src="../assets/img/insta/5.jpg"
               alt=""
             />
           </div>
@@ -362,7 +307,7 @@
       <div class="copyright mt-5">
         <div class="row container mx-auto mb-4">
           <div class="col-lg-3 col-md-6 col-12">
-            <img src="assets/img/payment.png" alt="" />
+            <img src="../assets/img/payment.png" alt="" />
           </div>
 
           <div class="col-lg-4 col-md-6 col-12 text-nowrap mb-2">

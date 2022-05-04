@@ -3,18 +3,18 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Rymo - Produto</title>
+    <title>Rymo - Sacola</title>
     <!--================== FAVICON ===================-->
-    <link rel="icon" href="assets/img/logoIcon.png" />
+    <link rel="icon" href="../assets/img/logoIcon.png" />
     <!--================== CSS ===================-->
-    <link rel="stylesheet" href="assets/css/produto.css" />
-    <link rel="stylesheet" href="assets/css/mainLayout.css" />
+    <link rel="stylesheet" href="../assets/css/carrinho.css" />
+    <link rel="stylesheet" href="../assets/css/mainLayout.css" />
 
     <!--================== LINK THUMBNAIL META TAGS ===================-->
     <!-- MS Tile - for Microsoft apps-->
     <meta
       name="msapplication-TileImage"
-      content="https://raw.githubusercontent.com/Thiagoow/Rymo-EcommerceWebsite-ResponsiveWithBootstrap/master/assets/img/ThumbnailLinkImg.jpg"
+      content="https://raw.githubusercontent.com/Thiagoow/Rymo-EcommerceWebsite-ResponsiveWithBootstrap/master/../assets/img/ThumbnailLinkImg.jpg"
     />
     <!-- fb & Whatsapp -->
     <meta property="og:site_name" content="Rymo." />
@@ -26,7 +26,7 @@
     <!-- IMG URL: -->
     <meta
       property="og:image"
-      content="https://raw.githubusercontent.com/Thiagoow/Rymo-EcommerceWebsite-ResponsiveWithBootstrap/master/assets/img/ThumbnailLinkImg.jpg"
+      content="https://raw.githubusercontent.com/Thiagoow/Rymo-EcommerceWebsite-ResponsiveWithBootstrap/master/../assets/img/ThumbnailLinkImg.jpg"
     />
     <meta property="og:type" content="website" />
     <meta property="og:image:type" content="image/jpeg" />
@@ -64,14 +64,12 @@
       integrity="sha384-cVKIPhGWiC2Al4u+LWgxfKTRIcfu0JTxR+EQDz/bgldoEyl4H0zUF0QKbrJ0EcQF"
       crossorigin="anonymous"
     ></script>
-    <!-- Js local: -->
-    <script src="/assets/js/produto.js"></script>
 
     <!-- NavBar: -->
     <nav class="navbar navbar-expand-lg navbar-light bg-white py-3 fixed-top">
       <div class="container">
-        <a href="/home.html">
-          <img src="assets/img/logo1.png" alt="" />
+        <a href="../home.html">
+          <img src="../assets/img/logo1.png" alt="" />
         </a>
         <button
           class="navbar-toggler"
@@ -87,14 +85,14 @@
         <div class="collapse navbar-collapse" id="navbarSupportedContent">
           <ul class="navbar-nav ml-auto">
             <li class="nav-item">
-              <a class="nav_link" href="/home.html">Home</a>
+              <a class="nav_link" href="../home.html">Home</a>
             </li>
             <li class="nav-item">
-              <a class="nav_link active" href="/loja.html">Loja</a>
+              <a class="nav_link" href="/pages/loja.html">Loja</a>
             </li>
 
             <li class="nav-item">
-              <a class="nav_link" href="/blog.html">Blog</a>
+              <a class="nav_link" href="/pages/blog.html">Blog</a>
             </li>
 
             <li class="nav-item">
@@ -107,8 +105,8 @@
               <i class="fal fa-search"></i>
             </li>
             <li class="nav-item">
-              <a href="/carrinho.html">
-                <i class="fal fa-shopping-bag"></i>
+              <a href="/pages/carrinho.html">
+                <i class="fal fa-shopping-bag active"></i>
               </a>
             </li>
           </ul>
@@ -116,159 +114,160 @@
       </div>
     </nav>
 
-    <section class="singleProduct container my-5 pt-5">
-      <div class="row mt-5">
-        <div class="col-lg-5 col-md-12 col-12">
-          <img
-            class="img-fluid w-100 h-55"
-            id="mainImg"
-            src="assets/img/shop/1.jpg"
-            alt=""
-          />
-
-          <!-- Coluna 1 das imagens do produto: -->
-          <div class="small-img-group">
-            <div class="small-img-col">
-              <img
-                class="small-img"
-                onclick="changeMainImg(this)"
-                width="100%"
-                src="assets/img/shop/1.jpg"
-                alt=""
-              />
-            </div>
-            <div class="small-img-col">
-              <img
-                class="small-img"
-                onclick="changeMainImg(this)"
-                width="100%"
-                src="assets/img/shop/24.jpg"
-                alt=""
-              />
-            </div>
-            <div class="small-img-col">
-              <img
-                class="small-img"
-                onclick="changeMainImg(this)"
-                width="100%"
-                src="assets/img/shop/25.jpg"
-                alt=""
-              />
-            </div>
-            <div class="small-img-col">
-              <img
-                class="small-img"
-                onclick="changeMainImg(this)"
-                width="100%"
-                src="assets/img/shop/26.jpg"
-                alt=""
-              />
-            </div>
-          </div>
-        </div>
-
-        <!-- Coluna 2 de detalhes do produto: -->
-        <div class="col-lg-6 col-md-12 col-12">
-          <h6 class="pt-2">Loja / T-shirt</h6>
-          <h3 class="pt-3 pb-2">Camiseta Masculina Básica</h3>
-          <h2>
-            <script>
-              document.write(price);
-            </script>
-          </h2>
-
-          <select class="my-3">
-            <option value="">Escolha o tamanho</option>
-            <option value="">PPP</option>
-            <option value="">PP</option>
-            <option value="">P</option>
-            <option value="">M</option>
-            <option value="">G</option>
-            <option value="">GG</option>
-            <option value="">XGG</option>
-            <option value="">G1</option>
-            <option value="">G2</option>
-          </select>
-          <input id="productQuantity" type="number" value="1" min="1" />
-          <button class="buy-btn">Adicionar ao Carrinho</button>
-
-          <h4 class="mt-5 mb-2">Detalhes do Produto</h4>
-          <span
-            >Lorem ipsum dolor sit amet consectetur adipisicing elit.
-            Perferendis quos excepturi corrupti nihil temporibus fuga
-            consequuntur assumenda ipsam rem mollitia dolores rerum, quibusdam
-            aliquam pariatur ab sequi iure cupiditate suscipit!</span
-          >
-        </div>
-      </div>
+    <section id="home" class="container pt-5 mt-5">
+      <h3 class="font-weight-bold pt-5">Sua sacola</h3>
+      <hr />
     </section>
 
-    <section class="my-5" id="relatedProducts">
-      <div class="container text-center mt-5 py-5">
-        <h3 class="font-weight-bold">Produtos Relacionados</h3>
-        <!-- Linha pra separar o conteúdo: -->
-        <hr class="mx-auto" />
-        <p>
-          Não é bem o que você queria? Não se preocupe, temos muitas outras
-          opções!
-        </p>
-      </div>
+    <section id="cart-container" class="container my-5">
+      <table width="100%">
+        <thead>
+          <tr>
+            <td>Remover</td>
+            <td>Imagem</td>
+            <td>Produto</td>
+            <td>Preço</td>
+            <td>Quantidade</td>
+            <td>Total</td>
+          </tr>
+        </thead>
 
-      <div class="row mx-auto container" id="relatedProducts">
-        <div class="product text-center col-lg-3 col-md-4 col-12">
-          <img class="img-fluid mb-3" src="assets/img/shop/13.jpg" alt="" />
-          <div class="stars">
-            <i class="fas fa-star"></i>
-            <i class="fas fa-star"></i>
-            <i class="fas fa-star"></i>
-            <i class="fas fa-star"></i>
-            <i class="fas fa-star"></i>
+        <tbody>
+          <!-- Linha 1 -->
+          <tr>
+            <td>
+              <a href="">
+                <i class="fas fa-trash-alt"></i>
+              </a>
+            </td>
+
+            <td>
+              <img src="../assets/img/shoes/5.jpg" alt="" />
+            </td>
+
+            <td>
+              <h6>Bege Casual</h6>
+            </td>
+
+            <td>
+              <h6>
+                <b>R$124,50</b>
+              </h6>
+            </td>
+
+            <td>
+              <input class="w-25 pl-1" value="1" min="1" type="number" />
+            </td>
+
+            <td>
+              <h6>
+                <b>R$135,00</b>
+              </h6>
+            </td>
+          </tr>
+
+          <!-- Linha 2 -->
+          <tr>
+            <td>
+              <a href="">
+                <i class="fas fa-trash-alt"></i>
+              </a>
+            </td>
+
+            <td>
+              <img src="../assets/img/shop/1.jpg" alt="" />
+            </td>
+
+            <td>
+              <h6>Camiseta Masculina Básica</h6>
+            </td>
+
+            <td>
+              <h6>
+                <b>R$38,00</b>
+              </h6>
+            </td>
+
+            <td>
+              <input class="w-25 pl-1" value="1" min="1" type="number" />
+            </td>
+
+            <td>
+              <h6>
+                <b>R$135,00</b>
+              </h6>
+            </td>
+          </tr>
+
+          <!-- Linha 3 -->
+          <tr>
+            <td>
+              <a href="">
+                <i class="fas fa-trash-alt"></i>
+              </a>
+            </td>
+
+            <td>
+              <img src="../assets/img/watches/2.jpg" alt="" />
+            </td>
+
+            <td>
+              <h6>Preto Casual Couro</h6>
+            </td>
+
+            <td>
+              <h6>
+                <b>R$50,00</b>
+              </h6>
+            </td>
+
+            <td>
+              <input class="w-25 pl-1" value="1" min="1" type="number" />
+            </td>
+
+            <td>
+              <h6>
+                <b>R$135,00</b>
+              </h6>
+            </td>
+          </tr>
+        </tbody>
+      </table>
+    </section>
+
+    <section id="cart-bottom" class="container">
+      <div class="row">
+        <div class="coupon col-lg-6 col-md-6 col-12 mb-4">
+          <div>
+            <h5>CUPOM</h5>
+            <p>Digite aqui seu cupom de desconto caso tenha um:</p>
+            <input type="text" placeholder="Código do cupom" />
+            <button>APLICAR CUPOM</button>
           </div>
-          <h5 class="p-name">Relógio Branco Executivo</h5>
-          <h4 class="p-price">R$90,00</h4>
-          <button class="buy-btn text-uppercase">Compre Agora</button>
         </div>
 
-        <div class="product text-center col-lg-3 col-md-4 col-12">
-          <img class="img-fluid mb-3" src="assets/img/shop/14.jpg" alt="" />
-          <div class="stars">
-            <i class="fas fa-star"></i>
-            <i class="fas fa-star"></i>
-            <i class="fas fa-star"></i>
-            <i class="fas fa-star"></i>
-            <i class="fas fa-star"></i>
-          </div>
-          <h5 class="p-name">Botas de Couro</h5>
-          <h4 class="p-price">R$80,00</h4>
-          <button class="buy-btn text-uppercase">Compre Agora</button>
-        </div>
+        <div class="total col-lg-6 col-md-6 col-12">
+          <div>
+            <h5>TOTAL DA COMPRA</h5>
+            <div class="d-flex justify-content-between">
+              <h6>Subtotal</h6>
+              <p>R$212,50</p>
+            </div>
+            <div class="d-flex justify-content-between">
+              <h6>Frete</h6>
+              <p>R$10,50</p>
+            </div>
 
-        <div class="product text-center col-lg-3 col-md-4 col-12">
-          <img class="img-fluid mb-3" src="assets/img/shop/15.jpg" alt="" />
-          <div class="stars">
-            <i class="fas fa-star"></i>
-            <i class="fas fa-star"></i>
-            <i class="fas fa-star"></i>
-            <i class="fas fa-star"></i>
-            <i class="fas fa-star"></i>
-          </div>
-          <h5 class="p-name">Gorro Cinza</h5>
-          <h4 class="p-price">R$24,80</h4>
-          <button class="buy-btn text-uppercase">Compre Agora</button>
-        </div>
+            <hr class="second-hr" />
+            <div class="d-flex justify-content-between">
+              <h6>TOTAL</h6>
+              <p>
+                <b>R$ 223</b>
+              </p>
+            </div>
 
-        <div class="product text-center col-lg-3 col-md-4 col-12">
-          <img class="img-fluid mb-3" src="assets/img/shop/16.jpg" alt="" />
-          <div class="stars">
-            <i class="fas fa-star"></i>
-            <i class="fas fa-star"></i>
-            <i class="fas fa-star"></i>
-            <i class="fas fa-star"></i>
-            <i class="fas fa-star"></i>
+            <button class="ml-auto">COMPRAR AGORA</button>
           </div>
-          <h5 class="p-name">Camiseta Púrpura</h5>
-          <h4 class="p-price">R$20,50</h4>
-          <button class="buy-btn text-uppercase">Compre Agora</button>
         </div>
       </div>
     </section>
@@ -276,7 +275,7 @@
     <footer class="mt-5 py-5">
       <div class="row container mx-auto pt-5">
         <div class="footer-one col-lg-3 col-md-6 col-12">
-          <img src="assets/img/logo2.png" alt="" />
+          <img src="../assets/img/logo2.png" alt="" />
           <p class="pt-3">
             A <bMain>Rymo.</bMain> é uma loja on-line de roupas fictícia. Criada
             por
@@ -333,27 +332,27 @@
           <div class="row">
             <img
               class="img-fluid w-25 h-100 m-2"
-              src="assets/img/insta/1.jpg"
+              src="../assets/img/insta/1.jpg"
               alt=""
             />
             <img
               class="img-fluid w-25 h-100 m-2"
-              src="assets/img/insta/2.jpg"
+              src="../assets/img/insta/2.jpg"
               alt=""
             />
             <img
               class="img-fluid w-25 h-100 m-2"
-              src="assets/img/insta/3.jpg"
+              src="../assets/img/insta/3.jpg"
               alt=""
             />
             <img
               class="img-fluid w-25 h-100 m-2"
-              src="assets/img/insta/4.jpg"
+              src="../assets/img/insta/4.jpg"
               alt=""
             />
             <img
               class="img-fluid w-25 h-100 m-2"
-              src="assets/img/insta/5.jpg"
+              src="../assets/img/insta/5.jpg"
               alt=""
             />
           </div>
@@ -363,7 +362,7 @@
       <div class="copyright mt-5">
         <div class="row container mx-auto mb-4">
           <div class="col-lg-3 col-md-6 col-12">
-            <img src="assets/img/payment.png" alt="" />
+            <img src="../assets/img/payment.png" alt="" />
           </div>
 
           <div class="col-lg-4 col-md-6 col-12 text-nowrap mb-2">
